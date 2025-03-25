@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - J. Semon</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #F3F4F6; margin: 0; padding: 0; }
+    header { background-color: #1E3A8A; padding: 1rem 0; text-align: center; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; }
+    nav ul li { display: inline; margin-right: 15px; }
+    nav ul li a { color: #FFD700; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav ul li a:hover { color: #F3F4F6; }
+    #portfolio { max-width: 1000px; margin: 50px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { color: #1E3A8A; text-align: center; }
+    .folders { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; }
+    .folder { width: 200px; text-align: center; margin-bottom: 20px; }
+    .folder a { text-decoration: none; color: #333; }
+    .folder img { width: 100px; height: 100px; margin-bottom: 10px; transition: transform 0.3s; }
+    .folder:hover img { transform: scale(1.1); }
+    footer { text-align: center; padding: 1rem 0; background-color: #1E3A8A; color: #fff; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="folders">
+      <div class="folder">
+        <a href="projects/video-editing/">
+          <img src="images/folder-icon video.png" alt="Video Editing">
+          <p><strong>Video Editing</strong></p>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="projects/photography/">
+          <img src="images/folder-icon photo.png" alt="Photography">
+          <p><strong>Photography</strong></p>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="projects/graphic-design/">
+          <img src="images/folder-icon.png" alt="Graphic Design">
+          <p><strong>Graphic Design</strong></p>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="projects/ai-generated-content/">
+          <img src="images/folder-icon ai.png" alt="AI-Generated Content">
+          <p><strong>AI-Generated Content</strong></p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 J. Semon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
